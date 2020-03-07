@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './modules/views/Home'
+import Events from './modules/views/Events'
+import Stay from './modules/views/Stay'
+import Rsvp from './modules/views/Rsvp'
+import Registry from './modules/views/Registry'
+import Photos from './modules/views/Photos'
+import Travel from './modules/views/Travel'
+import Drive from './modules/views/Drive'
+import Dress from './modules/views/Dress'
+import Favorites from './modules/views/Favorites'
 
-function App() {
+export default function Index() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <Home/>
+      <Rsvp/>
+      <Events/>
+      <Travel/>
+      <Stay/>
+      <Drive/>
+      <Dress/>
+      <Favorites/>
+      <Registry/>
+      <Photos/>
+    </React.Fragment>
+  )
 }
-
-export default App;
