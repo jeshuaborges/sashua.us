@@ -30,7 +30,7 @@ const NavLink = styled.a`
 
 const nav = [
   'Home',
-  'RSVP',
+  // 'RSVP',
   'Events',
   'Travel',
   'Stay',

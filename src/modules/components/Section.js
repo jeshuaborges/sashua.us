@@ -23,7 +23,7 @@ export const SectionHeader = styled.h2`
 export const ContentSection = ({ id, title, children}) => (
   <Section id={ id }>
     <SectionHeader>{ title }</SectionHeader>
-    <Nav/> }
+    <Nav/>
     <ContentContainer>
       { children }
     </ContentContainer>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentSection } from './Section'
+import { ContentSection } from '../components/Section'
 
 export default () =>
   <ContentSection id="photos" title="Photos">

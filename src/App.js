@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <React.Fragment>
       <Home/>
-      <Rsvp/>
+      {/*<Rsvp/>*/}
       <Events/>
       <Travel/>
       <Stay/>

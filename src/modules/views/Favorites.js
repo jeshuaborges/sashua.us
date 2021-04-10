@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentSection } from './Section'
+import { ContentSection } from '../components/Section'
 
 export default () => (
   <ContentSection id="favorites" title="Favorites">
@@ -9,7 +9,8 @@ export default () => (
     <h4>In Town</h4>
     Studios on the Park<br/>
     Shopping Downtown<br/>
-    Tin City & Negranti Creamery<br/>
+    Paso Market Walk<br/>
+    Tin City<br/>
 
     <h4>On The Coast</h4>
     Harmony Headlands<br/>
@@ -24,9 +25,9 @@ export default () => (
     <h3>To Eat</h3>
     <h4>Breakfast</h4>
     <ul>
-      <li>Bruch - 822 13th Street, Paso Robles: 805-762-4960 (American)</li>
-      <li>Joe’s Place - 305 Spring St, Paso Robles: 805-238-5637 (American)</li>
+      <li>Brunch - 822 13th St, Paso Robles: 805-762-4960 (American)</li>
       <li>Kitchenette - 105 South Main St, Templeton: 805-400-1006 (Local)</li>
+      <li>La Reyna Market y Carniceria - 532 24th St, Paso Robles: 805-238-9909 (Breakfast Burritos)</li>
       <li>Vic’s Cafe - 841 13th St, Paso Robles: 805-238-3988 (American)</li>
     </ul>
 
@@ -34,7 +35,7 @@ export default () => (
     <ul>
       <li>Fish Gaucho - 1244 Park St, Paso Robles: 805-239-3333 (Mexican)</li>
       <li>Jeffry’s Wine Country BBQ - 819 12th St #B, Paso Robles: 805-369-2132 (BBQ)</li>
-      <li>Pier 46 - 1131 Rossi Rd, Templeton: 805-434-1950 (Seafood)</li>
+      <li>Pier 46 - 1131 Rossi Rd, Templeton: 805-434-1950 (Fish Tacos/Seafood)</li>
       <li>La Cosecha - 835 12th St, Paso Robles: 805-237-0019 (Spanish & Latin American)</li>
       <li>Los Robles Café - 1420 Spring St, Paso Robles: 805-239-8525 (Mexican)</li>
       <li>Pappy McGregor’s Bar & Grill - 1122 Pine St, Paso Robles: 805-238-7070 (Pub)</li>
@@ -45,7 +46,7 @@ export default () => (
 
     <h4>Dinner</h4>
     <ul>
-      <li>bl brasserie - 1202 Pine St, Paso Robles: 805-226-8191 (French)</li>
+      <li>BL brasserie - 1202 Pine St, Paso Robles: 805-226-8191 (French)</li>
       <li>Fish Gaucho - 1244 Park St, Paso Robles: 805-239-3333 (Mexican)</li>
       <li>Goshi - 722 Pine St, Paso Robles: 805-227-4860 (Sushi)</li>
       <li>Il Cortile Ristorante - 608 12th St, Paso Robles: 805-226-0300 (Italian)</li>
@@ -55,9 +56,15 @@ export default () => (
       <li>The Catch - 836 11th St, Paso Robles: 805-239-3332 (American & Seafood)</li>
     </ul>
 
+    <h4>Treats</h4>
+    <ul>
+      <li>Leo Leo Gelato - 1835 Spring St, Paso Robles: 805-226-5050</li>
+      <li>Negranti Creamery - 2989 Limestone Way: 805-369-2663</li>
+    </ul>
+
     <h4>Worth The Drive</h4>
     <ul>
-      <li>Cass Winery - 7350 Linne Road, Paso Robles: 805-239-1730 (Local)</li>
+      <li>Cass Winery - 7350 Linne Rd, Paso Robles: 805-239-1730 (Local)</li>
       <li>Longbranch - 6258 Webster Rd, Creston: 805-779-0028 (American)</li>
       <li>The Range - 22317 El Camino Real, Santa Margarita: 805-438-4500 (American)</li>
     </ul>
@@ -65,7 +72,7 @@ export default () => (
     <h3>To Drink</h3>
     <h4>Coffee, Etc</h4>
     <ul>
-      <li>Spearhead Coffee - 619 12th St, Paso Robles: 805-296-3328</li>
+      <li>Amstrdm Coffee House & Piano Lounge - 725 13th St, Paso Robles: 805-369-2144</li>
       <li>Jamba Juice - 96 Niblick Rd, Paso Robles: 805-227-0826</li>
     </ul>
 

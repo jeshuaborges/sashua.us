@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentSection } from './Section'
+import { ContentSection } from '../components/Section'
 import styled from 'styled-components'
 import theme from '../theme'
 
@@ -28,6 +28,12 @@ const Event = ({ children }) =>
   <section>
     { children }
   </section>
+
+const Day = ({children, date}) =>
+  <div>
+    <Date>{date}</Date>
+    {children}
+  </div>
 
 const WelcomeGathering = () =>
   <Event>
@@ -67,7 +73,7 @@ const RiseAndShine = () =>
 const CeremonyAndLunch = () =>
   <Event>
     <Title>Wedding Ceremony & Lunch</Title>
-    <Subtext>at the Turnpike on Uncle Bill’s</Subtext>
+    <Subtext>at the Ranch</Subtext>
 
     9:45 am<br/>
     Mimosas & BBQ<br/>
@@ -86,7 +92,6 @@ const SunsetReception = () =>
   <Event>
     <Title>Sunset Reception</Title>
     <Subtext>at Marilyn & Ken Riding’s</Subtext>
-
     5:30 pm with cheers & cake at 7:30 pm<br/>
     Flatbreads & Cake<br/>
 
@@ -116,6 +121,12 @@ const CannonballLunch = () =>
     Swimwear<br/>
   </Event>
 
+const Parades = () =>
+  <Event>
+    <Title>Independence Day Parades</Title>
+    <Subtext>in Templeton & Cayucos</Subtext>
+  </Event>
+
 const TrailHike = () =>
   <Event>
     <Title>Point Buchon Trail Hike</Title>
@@ -131,21 +142,25 @@ const TrailHike = () =>
     </address>
   </Event>
 
-
 export default () => (
   <ContentSection id="events" title="Events">
-    <Date>Friday, the 4th of September, 2020</Date>
-    <WelcomeGathering/>
+    <Day date="Friday, the 1st of July, 2022">
+      <WelcomeGathering/>
+    </Day>
 
-    <Date>Saturday, the 6th of September, 2020</Date>
-    <RiseAndShine/>
-    <CeremonyAndLunch/>
-    <SunsetReception/>
+    <Day date="Saturday, the 2nd of July, 2022">
+      <RiseAndShine/>
+      <CeremonyAndLunch/>
+      <SunsetReception/>
+    </Day>
 
-    <Date>Sunday, the 7th of September, 2020</Date>
-    <CannonballLunch/>
+    <Day date="Sunday, the 3rd of July, 2022">
+      <CannonballLunch/>
+    </Day>
 
-    <Date>Monday, the 8th of September, 2020</Date>
-    <TrailHike/>
+    <Day date="Monday, the 4th of July, 2022">
+      <Parades/>
+      <TrailHike/>
+    </Day>
   </ContentSection>
 )

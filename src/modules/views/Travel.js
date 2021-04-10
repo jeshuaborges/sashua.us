@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentSection } from './Section'
+import { ContentSection } from '../components/Section'
 
 export default () => (
   <ContentSection id="travel" title="Travel">
@@ -16,7 +16,7 @@ export default () => (
     We applaud you for braving public transportation in California! The Paso Robles Station serves Greyhound busses and
     Amtrak trains. It is just a few blocks from downtown.
 
-    <h2>Car</h2>
+    <h2>By Car</h2>
 
     <h3>From the North</h3>
     Take US 101 South. Downtown Paso Robles is accessible by using the 17th Street exit, turn left on Riverside, right

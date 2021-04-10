@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme'
-import {Section} from './Section'
-import Nav from './Nav'
+import { Section } from '../components/Section'
+import Nav from '../components/Nav'
+import Title from '../components/Title'
 
 const H2 = styled.h2`
   text-align: center;
@@ -29,12 +30,11 @@ const Artwork = styled.div`
 `
 
 export default () => (
-  <Section id="home" includeNav={false}>
-    <Title/>
+  <Section id="home" includeNav={ false }>
+    <Title>Sasha & Jeshua</Title>
     <H2>are getting married</H2>
-    <H3>September 5, 2020 * Paso Robles, California</H3>
-    <Nav />
-    {/*<Hr/>*/}
+    <H3>July 2, 2022 * Paso Robles, California</H3>
+    <Nav/>
     <Artwork/>
   </Section>
 )

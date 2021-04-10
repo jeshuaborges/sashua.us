@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContentSection } from './Section'
+import { ContentSection } from '../components/Section'
 
 
 const Place = ({ name, url, description }) =>
@@ -19,8 +19,7 @@ export default () =>
     </p>
     <p>
       We are fortunate to have many friends doing the airbnb, hotel and vacation rental hustle around town. Here are
-      our
-      recommendations at please mention us for possible discounted rates!
+      our recommendations and please mention us for possible discounted rates!
     </p>
     <ul>
       <Place
